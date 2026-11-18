@@ -1,0 +1,71 @@
+{
+  "case": {
+    "id": "T04",
+    "question": "O que é fotossíntese?",
+    "scores": null,
+    "expected_behavior": "Abster-se de responder ao assunto externo, explicando o escopo ou a insuficiência das evidências."
+  },
+  "pipeline_fingerprint": "bc53f0a7d565dbbed1f3268673250b2df9449b9df22ef1c301206044f290b7f8",
+  "technical_status": "ok",
+  "result": {
+    "run_id": "5e1b3189cde54a4fb3e131cc52bd93a7",
+    "generated_at_utc": "2026-11-17T23:53:04.604745+00:00",
+    "question": "O que é fotossíntese?",
+    "filters": {
+      "scores": null
+    },
+    "top_k": 5,
+    "min_similarity": 0.45,
+    "threshold_status": "initial development heuristic; not a calibrated confidence probability",
+    "model": "gemini-3.5-flash-lite",
+    "api_called": false,
+    "prompt_sha256": "06ff8d7a934e44247b75589a27dba950b376e7629e0d72301b0d8506616d61cf",
+    "index": {
+      "schema_version": 1,
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": null,
+      "source_documents_sha256": "4e45fa437a730b563284d419ef4476fd2429c5c11e7874eeddab1a879c98d0eb",
+      "selected_reviews": 42687,
+      "sampling_seed": null,
+      "sampling": "none",
+      "max_seq_length": 128,
+      "normalize_embeddings": true,
+      "distance_metric": "cosine",
+      "chunk_overlap_tokens": 20,
+      "reviews_split": 1,
+      "max_review_tokens_with_special_tokens": 187,
+      "model_max_tokens": 128,
+      "status": "ready",
+      "collection": "olist_reviews_2f11ff0d78eef4766f1970e3",
+      "available_reviews": 42687,
+      "indexed_units": 42688,
+      "embedding_dimension": 384,
+      "new_embeddings_this_run": 42688,
+      "seconds_this_run": 796.399,
+      "generated_at_utc": "2026-11-17T20:47:12.339135+00:00",
+      "python": "3.14.5",
+      "packages": {
+        "sentence-transformers": "6.3.0",
+        "chromadb": "1.5.9",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      }
+    },
+    "retrieved_candidates_returned": 5,
+    "sources_sent_to_llm": [],
+    "response": {
+      "status": "sem_evidencias",
+      "motivo": "As avaliações recuperadas não atingiram o critério inicial de relevância. Reformule a pergunta ou investigue outro tema.",
+      "achados": [],
+      "limitacoes": [
+        "A ausência de fontes adequadas nesta busca não prova ausência do tema em toda a base."
+      ]
+    },
+    "usage": null,
+    "timing_seconds": {
+      "retrieval": 0.033414899837225676,
+      "generation_and_validation": 0.0,
+      "total_after_model_loading": 0.033503500279039145
+    }
+  }
+}

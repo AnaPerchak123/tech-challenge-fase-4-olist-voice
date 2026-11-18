@@ -1,0 +1,31 @@
+# Ambientes e credenciais
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Dados e índices recriáveis
+data/raw/*
+!data/raw/README.md
+data/processed/
+chroma_db/
+vectorstore/
+*.zip
+
+# Logs locais com comentários e perguntas
+outputs/*
+!outputs/data_quality.json
+!outputs/preparacao_base.md
+!outputs/index_summary.json
+!outputs/api_test.json
+!outputs/environment.json
+!outputs/evaluation_summary.csv
+!outputs/evaluation_metrics.json
+
+.vscode/
+.DS_Store
+Thumbs.db

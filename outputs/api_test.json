@@ -1,0 +1,5 @@
+{
+  "status": "API_OK",
+  "model": "gemini-3.5-flash-lite",
+  "structured_output": true
+}

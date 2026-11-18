@@ -1,0 +1,201 @@
+{
+  "case": {
+    "id": "T01",
+    "question": "O que os clientes relatam sobre atraso na entrega?",
+    "scores": [
+      1,
+      2
+    ],
+    "expected_behavior": "Recuperar relatos pertinentes e responder somente com afirmações sustentadas, limitadas às fontes."
+  },
+  "pipeline_fingerprint": "bc53f0a7d565dbbed1f3268673250b2df9449b9df22ef1c301206044f290b7f8",
+  "technical_status": "ok",
+  "result": {
+    "run_id": "c51645ec638a43ac8c29a0719c2a549f",
+    "generated_at_utc": "2026-11-17T23:52:44.590586+00:00",
+    "question": "O que os clientes relatam sobre atraso na entrega?",
+    "filters": {
+      "scores": [
+        1,
+        2
+      ]
+    },
+    "top_k": 5,
+    "min_similarity": 0.45,
+    "threshold_status": "initial development heuristic; not a calibrated confidence probability",
+    "model": "gemini-3.5-flash-lite",
+    "api_called": true,
+    "prompt_sha256": "06ff8d7a934e44247b75589a27dba950b376e7629e0d72301b0d8506616d61cf",
+    "index": {
+      "schema_version": 1,
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": null,
+      "source_documents_sha256": "4e45fa437a730b563284d419ef4476fd2429c5c11e7874eeddab1a879c98d0eb",
+      "selected_reviews": 42687,
+      "sampling_seed": null,
+      "sampling": "none",
+      "max_seq_length": 128,
+      "normalize_embeddings": true,
+      "distance_metric": "cosine",
+      "chunk_overlap_tokens": 20,
+      "reviews_split": 1,
+      "max_review_tokens_with_special_tokens": 187,
+      "model_max_tokens": 128,
+      "status": "ready",
+      "collection": "olist_reviews_2f11ff0d78eef4766f1970e3",
+      "available_reviews": 42687,
+      "indexed_units": 42688,
+      "embedding_dimension": 384,
+      "new_embeddings_this_run": 42688,
+      "seconds_this_run": 796.399,
+      "generated_at_utc": "2026-11-17T20:47:12.339135+00:00",
+      "python": "3.14.5",
+      "packages": {
+        "sentence-transformers": "6.3.0",
+        "chromadb": "1.5.9",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      }
+    },
+    "retrieved_candidates_returned": 5,
+    "sources_sent_to_llm": [
+      {
+        "document_id": "olist_1fd10b15e9ed30f621087c4b48501b721eb633bfa00adc8399f8eb7c9cf533ae_c000",
+        "text": "Gostaria de esclarecimentos acerca da entrega que está em atraso",
+        "metadata": {
+          "order_id": "e269b2472c0546324acf4d09dd7acfab",
+          "review_date": "2017-12-20T00:00:00",
+          "review_id": "7c4c2d10a57d4aab58a570a5a8ac9f2c",
+          "chunks_in_review": 1,
+          "chunk_id": 0,
+          "parent_id": "olist_1fd10b15e9ed30f621087c4b48501b721eb633bfa00adc8399f8eb7c9cf533ae",
+          "review_score": 1
+        },
+        "cosine_distance": 0.1569303274154663,
+        "cosine_similarity": 0.8430696725845337,
+        "label": "E1"
+      },
+      {
+        "document_id": "olist_23d72e8493117bfa48611ef1cb83930a5b0204e33bfd048b8a4966292acdcb61_c000",
+        "text": "demora na entrega",
+        "metadata": {
+          "order_id": "5510c1adb5cc6262d2fd7ce904b6e8f4",
+          "chunk_id": 0,
+          "review_id": "0fc42b14539f4177f534382d69d82d3c",
+          "review_score": 1,
+          "chunks_in_review": 1,
+          "parent_id": "olist_23d72e8493117bfa48611ef1cb83930a5b0204e33bfd048b8a4966292acdcb61",
+          "review_date": "2018-06-09T00:00:00"
+        },
+        "cosine_distance": 0.19603711366653442,
+        "cosine_similarity": 0.8039628863334656,
+        "label": "E2"
+      },
+      {
+        "document_id": "olist_d4b9be10eaeb4848433f3be90c107322cc54d0d67717fed79827dcb74e4c3551_c000",
+        "text": "Compra Um demora pra entrega",
+        "metadata": {
+          "review_id": "18215615f60e6771c00faaaa1ade4cea",
+          "chunk_id": 0,
+          "review_score": 2,
+          "chunks_in_review": 1,
+          "order_id": "743277e5089af7df0cbd543c93e5d852",
+          "review_date": "2018-07-14T00:00:00",
+          "parent_id": "olist_d4b9be10eaeb4848433f3be90c107322cc54d0d67717fed79827dcb74e4c3551"
+        },
+        "cosine_distance": 0.21051406860351562,
+        "cosine_similarity": 0.7894859313964844,
+        "label": "E3"
+      },
+      {
+        "document_id": "olist_ddefbb2969d5435a5bf043bde090eab92e1d139caee47b0792002dc87f3dfc4e_c000",
+        "text": "Ultimamente estão atrasando muito as entregas",
+        "metadata": {
+          "review_id": "7528a396f7625967f05cb09946286608",
+          "parent_id": "olist_ddefbb2969d5435a5bf043bde090eab92e1d139caee47b0792002dc87f3dfc4e",
+          "chunks_in_review": 1,
+          "chunk_id": 0,
+          "review_date": "2018-03-30T00:00:00",
+          "order_id": "1777854e00599d581f88f45af1432949",
+          "review_score": 1
+        },
+        "cosine_distance": 0.2145073413848877,
+        "cosine_similarity": 0.7854926586151123,
+        "label": "E4"
+      },
+      {
+        "document_id": "olist_80c696c3f9c793ae1c5dc27dd46fbdcf44ea8e03a9c1d71b149cc9d0d43c34c7_c000",
+        "text": "Muita demora na entrega",
+        "metadata": {
+          "review_score": 1,
+          "review_date": "2018-03-09T00:00:00",
+          "chunks_in_review": 1,
+          "review_id": "72926e5236768ffc912764ca429d0e00",
+          "order_id": "1d6df969542603d9f097e871bff9a9b7",
+          "chunk_id": 0,
+          "parent_id": "olist_80c696c3f9c793ae1c5dc27dd46fbdcf44ea8e03a9c1d71b149cc9d0d43c34c7"
+        },
+        "cosine_distance": 0.21869206428527832,
+        "cosine_similarity": 0.7813079357147217,
+        "label": "E5"
+      }
+    ],
+    "response": {
+      "status": "respondido",
+      "motivo": "",
+      "achados": [
+        {
+          "afirmacao": "Clientes relataram atrasos e demora nas entregas.",
+          "evidencias": [
+            {
+              "fonte": "E1",
+              "trecho": "entrega que está em atraso"
+            },
+            {
+              "fonte": "E2",
+              "trecho": "demora na entrega"
+            },
+            {
+              "fonte": "E3",
+              "trecho": "demora pra entrega"
+            },
+            {
+              "fonte": "E4",
+              "trecho": "atrasando muito as entregas"
+            },
+            {
+              "fonte": "E5",
+              "trecho": "Muita demora na entrega"
+            }
+          ]
+        }
+      ],
+      "limitacoes": [
+        "A base recuperada contém apenas uma amostra limitada de cinco avaliações, não representando a totalidade da base histórica nem um ranking global de frequência."
+      ]
+    },
+    "usage": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 252,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 612,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 612
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 864,
+      "traffic_type": null
+    },
+    "timing_seconds": {
+      "retrieval": 0.1810025996528566,
+      "generation_and_validation": 2.935358399990946,
+      "total_after_model_loading": 3.1168557996861637
+    }
+  }
+}

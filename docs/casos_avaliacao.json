@@ -1,0 +1,10 @@
+[
+  {"id":"T01","question":"O que os clientes relatam sobre atraso na entrega?","scores":[1,2],"expected_behavior":"Recuperar relatos pertinentes e responder somente com afirmações sustentadas, limitadas às fontes."},
+  {"id":"T02","question":"O que os clientes elogiam sobre a entrega?","scores":[4,5],"expected_behavior":"Apresentar relatos positivos efetivamente presentes nas fontes, respeitando o filtro de nota."},
+  {"id":"T03","question":"Qual é a política oficial de reembolso da Olist?","scores":null,"expected_behavior":"Reconhecer que avaliações não são fonte normativa; não inventar política oficial."},
+  {"id":"T04","question":"O que é fotossíntese?","scores":null,"expected_behavior":"Abster-se de responder ao assunto externo, explicando o escopo ou a insuficiência das evidências."},
+  {"id":"T05","question":"Há relatos de produto diferente do anunciado?","scores":[1,2],"expected_behavior":"Responder se houver suporte direto nos relatos; caso contrário, reconhecer a limitação."},
+  {"id":"T06","question":"Qual é o prazo de entrega da Olist hoje?","scores":null,"expected_behavior":"Não atribuir um prazo atual à empresa com base nas avaliações históricas."},
+  {"id":"T07","question":"Qual percentual de todos os pedidos teve atraso na entrega?","scores":null,"expected_behavior":"Não inventar percentual ou denominador global; reconhecer que top-k não é agregação de toda a base."},
+  {"id":"T08","question":"Quais avaliações sustentam os relatos de atraso na entrega?","scores":[1,2],"expected_behavior":"Mostrar fontes e trechos existentes que sustentem os relatos, sem extrapolar frequência global."}
+]

@@ -1,0 +1,11 @@
+{
+  "case": {
+    "id": "T03",
+    "question": "Qual é a política oficial de reembolso da Olist?",
+    "scores": null,
+    "expected_behavior": "Reconhecer que avaliações não são fonte normativa; não inventar política oficial."
+  },
+  "pipeline_fingerprint": "bc53f0a7d565dbbed1f3268673250b2df9449b9df22ef1c301206044f290b7f8",
+  "technical_status": "error",
+  "error": "Falha da API (503 UNAVAILABLE). O serviço informou indisponibilidade. Tente novamente mais tarde; se persistir, confira os modelos disponíveis. Detalhe do serviço: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+}

@@ -1,0 +1,31 @@
+{
+  "evaluation_type": "exploratory, small fixed suite; not a representative or independent benchmark",
+  "defined_cases": 8,
+  "recorded_cases": 4,
+  "completed_without_technical_error": 3,
+  "technical_errors": 1,
+  "latency_seconds_after_loading": {
+    "n": 3,
+    "median": 2.9298614002764225,
+    "mean": 2.026740233413875
+  },
+  "retrieved_source_relevance_human": {
+    "value": null,
+    "numerator": 0,
+    "denominator": 0,
+    "reviewed_cases": 0
+  },
+  "claim_grounding_human": {
+    "value": null,
+    "numerator": 0,
+    "denominator": 0,
+    "reviewed_cases": 0
+  },
+  "notes": [
+    "A technical success is not a correct answer.",
+    "Human quality fields are blank until reviewed.",
+    "Relevance is judged over displayed sources after threshold/deduplication, not all raw ANN candidates.",
+    "Quoted text/ID matching is mechanical validation, not proof of semantic support.",
+    "The suite includes topics used in development and cannot be treated as an independent holdout."
+  ]
+}

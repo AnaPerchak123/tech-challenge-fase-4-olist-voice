@@ -1,0 +1,193 @@
+{
+  "case": {
+    "id": "T02",
+    "question": "O que os clientes elogiam sobre a entrega?",
+    "scores": [
+      4,
+      5
+    ],
+    "expected_behavior": "Apresentar relatos positivos efetivamente presentes nas fontes, respeitando o filtro de nota."
+  },
+  "pipeline_fingerprint": "bc53f0a7d565dbbed1f3268673250b2df9449b9df22ef1c301206044f290b7f8",
+  "technical_status": "ok",
+  "result": {
+    "run_id": "902bdcf6d12c48b1bc4b0e6f3661259d",
+    "generated_at_utc": "2026-11-17T23:52:52.525978+00:00",
+    "question": "O que os clientes elogiam sobre a entrega?",
+    "filters": {
+      "scores": [
+        4,
+        5
+      ]
+    },
+    "top_k": 5,
+    "min_similarity": 0.45,
+    "threshold_status": "initial development heuristic; not a calibrated confidence probability",
+    "model": "gemini-3.5-flash-lite",
+    "api_called": true,
+    "prompt_sha256": "06ff8d7a934e44247b75589a27dba950b376e7629e0d72301b0d8506616d61cf",
+    "index": {
+      "schema_version": 1,
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": null,
+      "source_documents_sha256": "4e45fa437a730b563284d419ef4476fd2429c5c11e7874eeddab1a879c98d0eb",
+      "selected_reviews": 42687,
+      "sampling_seed": null,
+      "sampling": "none",
+      "max_seq_length": 128,
+      "normalize_embeddings": true,
+      "distance_metric": "cosine",
+      "chunk_overlap_tokens": 20,
+      "reviews_split": 1,
+      "max_review_tokens_with_special_tokens": 187,
+      "model_max_tokens": 128,
+      "status": "ready",
+      "collection": "olist_reviews_2f11ff0d78eef4766f1970e3",
+      "available_reviews": 42687,
+      "indexed_units": 42688,
+      "embedding_dimension": 384,
+      "new_embeddings_this_run": 42688,
+      "seconds_this_run": 796.399,
+      "generated_at_utc": "2026-11-17T20:47:12.339135+00:00",
+      "python": "3.14.5",
+      "packages": {
+        "sentence-transformers": "6.3.0",
+        "chromadb": "1.5.9",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      }
+    },
+    "retrieved_candidates_returned": 5,
+    "sources_sent_to_llm": [
+      {
+        "document_id": "olist_1d82817b39c13bc271527648f40320f922c54bb952467eedc1aba3bca93e62f4_c000",
+        "text": "Satisfeito com a entrega... atendimento e produto",
+        "metadata": {
+          "review_score": 5,
+          "order_id": "7590e5484e3ab1973abbed2b5f8146e1",
+          "review_id": "37c35442208c3077f15ff19e742e0c3e",
+          "chunk_id": 0,
+          "parent_id": "olist_1d82817b39c13bc271527648f40320f922c54bb952467eedc1aba3bca93e62f4",
+          "chunks_in_review": 1,
+          "review_date": "2017-09-16T00:00:00"
+        },
+        "cosine_distance": 0.18547946214675903,
+        "cosine_similarity": 0.814520537853241,
+        "label": "E1"
+      },
+      {
+        "document_id": "olist_87e5d61b6e89dbadb3198cf0aa19594eb15fd67ee84a0914a9f6ef40a81fe66d_c000",
+        "text": "Com relação à compra e entrega, só tenho a elogiar. Muito obrigada!",
+        "metadata": {
+          "review_id": "715d3f3f7ef4c0d9dc0e8fc2b7d64d3c",
+          "review_score": 5,
+          "chunks_in_review": 1,
+          "parent_id": "olist_87e5d61b6e89dbadb3198cf0aa19594eb15fd67ee84a0914a9f6ef40a81fe66d",
+          "order_id": "a909c24a30d5a05204ecb7ef3f11e321",
+          "review_date": "2016-10-26T00:00:00",
+          "chunk_id": 0
+        },
+        "cosine_distance": 0.20112550258636475,
+        "cosine_similarity": 0.7988744974136353,
+        "label": "E2"
+      },
+      {
+        "document_id": "olist_8c50bd070d10e68d22c2b4f0dab97912b6c3fcfac77b82153bbca91ced59c45c_c000",
+        "text": "relogio de parende muito satisfeito com o produto e a entrega",
+        "metadata": {
+          "parent_id": "olist_8c50bd070d10e68d22c2b4f0dab97912b6c3fcfac77b82153bbca91ced59c45c",
+          "chunk_id": 0,
+          "chunks_in_review": 1,
+          "review_id": "a807ea65e5f33c7fdc436a6e95676660",
+          "order_id": "33526a04c7941ab386cc410962b171a0",
+          "review_date": "2018-07-31T00:00:00",
+          "review_score": 5
+        },
+        "cosine_distance": 0.21509593725204468,
+        "cosine_similarity": 0.7849040627479553,
+        "label": "E3"
+      },
+      {
+        "document_id": "olist_9d0efc3fda456bbaeeda5698cccf29b97a4aa7e1eb01924959205f28539413ba_c000",
+        "text": "Prazo cumprido, qualidade presente entrega o que vende",
+        "metadata": {
+          "order_id": "0e6f7fb47bffbb13f0c144a12443e5a7",
+          "chunks_in_review": 1,
+          "parent_id": "olist_9d0efc3fda456bbaeeda5698cccf29b97a4aa7e1eb01924959205f28539413ba",
+          "review_id": "6c612bde41f4ce34be1b41efb17aa695",
+          "review_date": "2017-09-20T00:00:00",
+          "chunk_id": 0,
+          "review_score": 5
+        },
+        "cosine_distance": 0.23357844352722168,
+        "cosine_similarity": 0.7664215564727783,
+        "label": "E4"
+      },
+      {
+        "document_id": "olist_35b1e27a91e0dcc7bddb975e4cc4d6a43d9e93b949938b95e22843bee7f805da_c000",
+        "text": "Ótima Satisfação ao cliente",
+        "metadata": {
+          "review_score": 5,
+          "order_id": "08a5a57f90304e3e736623cdd8eb0166",
+          "chunks_in_review": 1,
+          "review_id": "891251e205309fb9fdc3a1f63d113120",
+          "review_date": "2018-06-13T00:00:00",
+          "parent_id": "olist_35b1e27a91e0dcc7bddb975e4cc4d6a43d9e93b949938b95e22843bee7f805da",
+          "chunk_id": 0
+        },
+        "cosine_distance": 0.23682820796966553,
+        "cosine_similarity": 0.7631717920303345,
+        "label": "E5"
+      }
+    ],
+    "response": {
+      "status": "respondido",
+      "motivo": "",
+      "achados": [
+        {
+          "afirmacao": "Clientes relataram satisfação geral com a entrega e cumprimento de prazo.",
+          "evidencias": [
+            {
+              "fonte": "E1",
+              "trecho": "Satisfeito com a entrega..."
+            },
+            {
+              "fonte": "E2",
+              "trecho": "Com relação à compra e entrega, só tenho a elogiar."
+            },
+            {
+              "fonte": "E4",
+              "trecho": "Prazo cumprido"
+            }
+          ]
+        }
+      ],
+      "limitacoes": [
+        "O escopo dos relatos recuperados é limitado e não representa a totalidade da base histórica."
+      ]
+    },
+    "usage": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 192,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 633,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 633
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 825,
+      "traffic_type": null
+    },
+    "timing_seconds": {
+      "retrieval": 0.2933412999846041,
+      "generation_and_validation": 2.6362813003361225,
+      "total_after_model_loading": 2.9298614002764225
+    }
+  }
+}

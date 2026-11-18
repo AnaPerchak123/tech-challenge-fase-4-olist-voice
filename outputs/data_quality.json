@@ -1,0 +1,54 @@
+{
+  "preparation_version": "1.0.0",
+  "generated_at_utc": "2026-11-17T19:58:30.133881+00:00",
+  "source": "olist_order_reviews_dataset.csv",
+  "source_csv_sha256": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+  "source_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+  "runtime": {
+    "python": "3.14.5",
+    "pandas": "3.1.1"
+  },
+  "sampling": "none; all eligible textual reviews",
+  "rows_original": 99224,
+  "missing_by_column_original": {
+    "review_id": 0,
+    "order_id": 0,
+    "review_score": 0,
+    "review_comment_title": 87658,
+    "review_comment_message": 58274,
+    "review_creation_date": 0,
+    "review_answer_timestamp": 0
+  },
+  "review_ids_with_multiple_rows_original": 789,
+  "rows_removed_exact_duplicates": 0,
+  "rows_removed_no_text_after_dedup": 56537,
+  "rows_removed_missing_id_after_text_filter": 0,
+  "documents_final": 42687,
+  "rows_with_invalid_or_missing_score_final": 0,
+  "rows_with_unparsed_review_date_final": 0,
+  "review_date_min": "2016-10-02T00:00:00",
+  "review_date_max": "2018-08-31T00:00:00",
+  "score_distribution_final": {
+    "1": 8829,
+    "2": 2165,
+    "3": 3643,
+    "4": 6274,
+    "5": 21776
+  },
+  "text_length_characters": {
+    "min": 1,
+    "median": 53.0,
+    "p95": 193.0,
+    "max": 228
+  },
+  "document_unit": "one eligible review per document; token limit must be checked before embedding",
+  "rules": [
+    "Exclude exact duplicates over the seven raw columns, then empty cleaned text, then missing IDs.",
+    "Retain distinct records with a repeated review_id; generate a content-derived document_id.",
+    "Retain repeated text across distinct reviews; do not interpret text repetition as record duplication.",
+    "Use title and message; normalize Unicode, basic HTML, controls and whitespace.",
+    "Preserve sentiment, negation, accents, case and punctuation; no lowercasing or stopword removal.",
+    "Do not infer purchase date, delivery outcome or sentiment class from review date or score.",
+    "No API calls or embeddings occur in this preparation step."
+  ]
+}
