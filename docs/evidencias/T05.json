@@ -1,0 +1,201 @@
+{
+  "case": {
+    "id": "T05",
+    "question": "Há relatos de produto diferente do anunciado?",
+    "scores": [
+      1,
+      2
+    ],
+    "expected_behavior": "Responder se houver suporte direto nos relatos; caso contrário, reconhecer a limitação."
+  },
+  "pipeline_fingerprint": "bc53f0a7d565dbbed1f3268673250b2df9449b9df22ef1c301206044f290b7f8",
+  "technical_status": "ok",
+  "result": {
+    "run_id": "44a4bbc914f644e998447f34b79d0c18",
+    "generated_at_utc": "2026-11-18T00:57:40.615500+00:00",
+    "question": "Há relatos de produto diferente do anunciado?",
+    "filters": {
+      "scores": [
+        1,
+        2
+      ]
+    },
+    "top_k": 5,
+    "min_similarity": 0.45,
+    "threshold_status": "initial development heuristic; not a calibrated confidence probability",
+    "model": "gemini-3.5-flash-lite",
+    "api_called": true,
+    "prompt_sha256": "06ff8d7a934e44247b75589a27dba950b376e7629e0d72301b0d8506616d61cf",
+    "index": {
+      "schema_version": 1,
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": null,
+      "source_documents_sha256": "4e45fa437a730b563284d419ef4476fd2429c5c11e7874eeddab1a879c98d0eb",
+      "selected_reviews": 42687,
+      "sampling_seed": null,
+      "sampling": "none",
+      "max_seq_length": 128,
+      "normalize_embeddings": true,
+      "distance_metric": "cosine",
+      "chunk_overlap_tokens": 20,
+      "reviews_split": 1,
+      "max_review_tokens_with_special_tokens": 187,
+      "model_max_tokens": 128,
+      "status": "ready",
+      "collection": "olist_reviews_2f11ff0d78eef4766f1970e3",
+      "available_reviews": 42687,
+      "indexed_units": 42688,
+      "embedding_dimension": 384,
+      "new_embeddings_this_run": 42688,
+      "seconds_this_run": 796.399,
+      "generated_at_utc": "2026-11-17T20:47:12.339135+00:00",
+      "python": "3.14.5",
+      "packages": {
+        "sentence-transformers": "6.3.0",
+        "chromadb": "1.5.9",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      }
+    },
+    "retrieved_candidates_returned": 5,
+    "sources_sent_to_llm": [
+      {
+        "document_id": "olist_d881d69f5bcfc083d095a8c3bd08088bbe8bc4d5b79b64493b6e06a697041bc4_c000",
+        "text": "produto diferente do anunciado",
+        "metadata": {
+          "order_id": "8006a29212bfc6b554bdb445427822bf",
+          "chunks_in_review": 1,
+          "parent_id": "olist_d881d69f5bcfc083d095a8c3bd08088bbe8bc4d5b79b64493b6e06a697041bc4",
+          "chunk_id": 0,
+          "review_date": "2018-03-06T00:00:00",
+          "review_score": 1,
+          "review_id": "51a1578250f045f0a1044b653ee9b3be"
+        },
+        "cosine_distance": 0.1326587200164795,
+        "cosine_similarity": 0.8673412799835205,
+        "label": "E1"
+      },
+      {
+        "document_id": "olist_8d2649cd7d49ff8156ec74e380c9bdab9dab46dee6fc096d0bd45f47a54f5fef_c000",
+        "text": "Anunciou um produto entregou diferente",
+        "metadata": {
+          "parent_id": "olist_8d2649cd7d49ff8156ec74e380c9bdab9dab46dee6fc096d0bd45f47a54f5fef",
+          "review_date": "2018-07-01T00:00:00",
+          "chunks_in_review": 1,
+          "review_id": "2d90bdb77533cae4c2957b2e9f315a91",
+          "order_id": "622313cbbf2c6fb616025bc038e3bba6",
+          "chunk_id": 0,
+          "review_score": 1
+        },
+        "cosine_distance": 0.2285252809524536,
+        "cosine_similarity": 0.7714747190475464,
+        "label": "E2"
+      },
+      {
+        "document_id": "olist_6b3ac8d2ab6410771b1fbf290d4e71e79ecabe5c186b1af5c05ee7a0d00de245_c000",
+        "text": "Recebi um produto diferente do anunciado",
+        "metadata": {
+          "review_id": "b350f1b9ce136bb7ccb02ac6398106fb",
+          "chunks_in_review": 1,
+          "order_id": "50732a86b0335ae225e4432548113e9a",
+          "parent_id": "olist_6b3ac8d2ab6410771b1fbf290d4e71e79ecabe5c186b1af5c05ee7a0d00de245",
+          "review_score": 1,
+          "review_date": "2018-03-28T00:00:00",
+          "chunk_id": 0
+        },
+        "cosine_distance": 0.26740384101867676,
+        "cosine_similarity": 0.7325961589813232,
+        "label": "E3"
+      },
+      {
+        "document_id": "olist_b46afb489b55f4e1840d86f5e97b9f58dded89896fb818cc657f498861c0776a_c000",
+        "text": "O produto veio diferente do anuncio",
+        "metadata": {
+          "chunk_id": 0,
+          "review_score": 2,
+          "parent_id": "olist_b46afb489b55f4e1840d86f5e97b9f58dded89896fb818cc657f498861c0776a",
+          "review_id": "09e543d8be5911076628e46bcf674dfb",
+          "order_id": "b458ffdf7369c1e76ef5ba66155886da",
+          "review_date": "2017-08-22T00:00:00",
+          "chunks_in_review": 1
+        },
+        "cosine_distance": 0.27020472288131714,
+        "cosine_similarity": 0.7297952771186829,
+        "label": "E4"
+      },
+      {
+        "document_id": "olist_e800f25571181e89ddf164aa1ba063a058dfbcd33265f537df25a5ec4f0b91b0_c000",
+        "text": "estampa diferente do anunciado",
+        "metadata": {
+          "review_date": "2017-07-08T00:00:00",
+          "chunks_in_review": 1,
+          "chunk_id": 0,
+          "order_id": "039749cde6a67a679fa5602f776cefa4",
+          "review_score": 2,
+          "parent_id": "olist_e800f25571181e89ddf164aa1ba063a058dfbcd33265f537df25a5ec4f0b91b0",
+          "review_id": "d87c687dd8b02f8ada8388b7509a5040"
+        },
+        "cosine_distance": 0.27871382236480713,
+        "cosine_similarity": 0.7212861776351929,
+        "label": "E5"
+      }
+    ],
+    "response": {
+      "status": "respondido",
+      "motivo": "",
+      "achados": [
+        {
+          "afirmacao": "Clientes relataram ter recebido produto diferente do anunciado.",
+          "evidencias": [
+            {
+              "fonte": "E1",
+              "trecho": "produto diferente do anunciado"
+            },
+            {
+              "fonte": "E2",
+              "trecho": "Anunciou um produto entregou diferente"
+            },
+            {
+              "fonte": "E3",
+              "trecho": "Recebi um produto diferente do anunciado"
+            },
+            {
+              "fonte": "E4",
+              "trecho": "O produto veio diferente do anuncio"
+            },
+            {
+              "fonte": "E5",
+              "trecho": "estampa diferente do anunciado"
+            }
+          ]
+        }
+      ],
+      "limitacoes": [
+        "A análise restringe-se aos relatos recuperados e não representa a frequência global da base."
+      ]
+    },
+    "usage": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 243,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 601,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 601
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 844,
+      "traffic_type": null
+    },
+    "timing_seconds": {
+      "retrieval": 0.19333670008927584,
+      "generation_and_validation": 2.259400799870491,
+      "total_after_model_loading": 2.4529621000401676
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
   "evaluation_type": "exploratory, small fixed suite; not a representative or independent benchmark",
   "defined_cases": 8,
-  "recorded_cases": 4,
-  "completed_without_technical_error": 3,
-  "technical_errors": 1,
+  "recorded_cases": 8,
+  "completed_without_technical_error": 8,
+  "technical_errors": 0,
   "latency_seconds_after_loading": {
-    "n": 3,
-    "median": 2.9298614002764225,
-    "mean": 2.026740233413875
+    "n": 8,
+    "median": 2.4320582998916507,
+    "mean": 2.247310450009536
   },
   "retrieved_source_relevance_human": {
     "value": null,

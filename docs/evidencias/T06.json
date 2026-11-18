@@ -1,0 +1,169 @@
+{
+  "case": {
+    "id": "T06",
+    "question": "Qual é o prazo de entrega da Olist hoje?",
+    "scores": null,
+    "expected_behavior": "Não atribuir um prazo atual à empresa com base nas avaliações históricas."
+  },
+  "pipeline_fingerprint": "bc53f0a7d565dbbed1f3268673250b2df9449b9df22ef1c301206044f290b7f8",
+  "technical_status": "ok",
+  "result": {
+    "run_id": "79ade942986b44d19d571810240d8cec",
+    "generated_at_utc": "2026-11-18T00:57:47.340626+00:00",
+    "question": "Qual é o prazo de entrega da Olist hoje?",
+    "filters": {
+      "scores": null
+    },
+    "top_k": 5,
+    "min_similarity": 0.45,
+    "threshold_status": "initial development heuristic; not a calibrated confidence probability",
+    "model": "gemini-3.5-flash-lite",
+    "api_called": true,
+    "prompt_sha256": "06ff8d7a934e44247b75589a27dba950b376e7629e0d72301b0d8506616d61cf",
+    "index": {
+      "schema_version": 1,
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": null,
+      "source_documents_sha256": "4e45fa437a730b563284d419ef4476fd2429c5c11e7874eeddab1a879c98d0eb",
+      "selected_reviews": 42687,
+      "sampling_seed": null,
+      "sampling": "none",
+      "max_seq_length": 128,
+      "normalize_embeddings": true,
+      "distance_metric": "cosine",
+      "chunk_overlap_tokens": 20,
+      "reviews_split": 1,
+      "max_review_tokens_with_special_tokens": 187,
+      "model_max_tokens": 128,
+      "status": "ready",
+      "collection": "olist_reviews_2f11ff0d78eef4766f1970e3",
+      "available_reviews": 42687,
+      "indexed_units": 42688,
+      "embedding_dimension": 384,
+      "new_embeddings_this_run": 42688,
+      "seconds_this_run": 796.399,
+      "generated_at_utc": "2026-11-17T20:47:12.339135+00:00",
+      "python": "3.14.5",
+      "packages": {
+        "sentence-transformers": "6.3.0",
+        "chromadb": "1.5.9",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      }
+    },
+    "retrieved_candidates_returned": 5,
+    "sources_sent_to_llm": [
+      {
+        "document_id": "olist_33d07feffd0c0f8b5f55f2fb97df687987716cb532d029132ac74f4de6c3ee26_c000",
+        "text": "foi entregue no prazo",
+        "metadata": {
+          "review_id": "39428d600d091eef77d4d97572facdc7",
+          "order_id": "abb6ee8df76cd626afdcf19cec0d62bf",
+          "chunks_in_review": 1,
+          "parent_id": "olist_33d07feffd0c0f8b5f55f2fb97df687987716cb532d029132ac74f4de6c3ee26",
+          "review_score": 5,
+          "chunk_id": 0,
+          "review_date": "2018-02-17T00:00:00"
+        },
+        "cosine_distance": 0.21961581707000732,
+        "cosine_similarity": 0.7803841829299927,
+        "label": "E1"
+      },
+      {
+        "document_id": "olist_48a2014ff6b728dc759f2b40491b23981bfb243f484d8609cff6239e2f7894fe_c000",
+        "text": "Precisa cumprir as data de entrega.",
+        "metadata": {
+          "chunk_id": 0,
+          "review_id": "f51d49fa7930012adb08ab8fcbfd167e",
+          "parent_id": "olist_48a2014ff6b728dc759f2b40491b23981bfb243f484d8609cff6239e2f7894fe",
+          "review_date": "2017-08-16T00:00:00",
+          "review_score": 2,
+          "order_id": "6fc4b5c7dea29fb5062b9fb57e3d958e",
+          "chunks_in_review": 1
+        },
+        "cosine_distance": 0.2203863263130188,
+        "cosine_similarity": 0.7796136736869812,
+        "label": "E2"
+      },
+      {
+        "document_id": "olist_b3e82cd71c64fe9cdaeee15dc797b9ab7b138641cd51c380229ef8667d155069_c000",
+        "text": "Já passou o prazo de entrega era dia 12/02",
+        "metadata": {
+          "order_id": "8076135356d195170fe9f8d5698182c4",
+          "review_id": "bbc9edca9201147163dbedff68bf423f",
+          "parent_id": "olist_b3e82cd71c64fe9cdaeee15dc797b9ab7b138641cd51c380229ef8667d155069",
+          "chunks_in_review": 1,
+          "chunk_id": 0,
+          "review_date": "2018-02-17T00:00:00",
+          "review_score": 1
+        },
+        "cosine_distance": 0.22095012664794922,
+        "cosine_similarity": 0.7790498733520508,
+        "label": "E3"
+      },
+      {
+        "document_id": "olist_abb16a3cb043bde7153ed72f84147b542a437706693e100976777965dedef97d_c000",
+        "text": "Tudo certo, entrega na data prevista",
+        "metadata": {
+          "chunk_id": 0,
+          "review_date": "2018-06-12T00:00:00",
+          "parent_id": "olist_abb16a3cb043bde7153ed72f84147b542a437706693e100976777965dedef97d",
+          "order_id": "73b83fe6a84d80f819839c0f93413771",
+          "review_score": 5,
+          "review_id": "9236629248b8bf62dccd91f0ad9d5c00",
+          "chunks_in_review": 1
+        },
+        "cosine_distance": 0.22813546657562256,
+        "cosine_similarity": 0.7718645334243774,
+        "label": "E4"
+      },
+      {
+        "document_id": "olist_7aaa93e06ab1b4eb3c451d16474a1b66119171fd1fd8e9cb06144c6fa3855df1_c000",
+        "text": "Ótimo o prazo de entrega",
+        "metadata": {
+          "review_id": "64a446030f8a7b06ee8f3294f8d19dc0",
+          "review_date": "2017-11-17T00:00:00",
+          "parent_id": "olist_7aaa93e06ab1b4eb3c451d16474a1b66119171fd1fd8e9cb06144c6fa3855df1",
+          "chunks_in_review": 1,
+          "chunk_id": 0,
+          "order_id": "e6712050b6cb63061665c44062c15b78",
+          "review_score": 5
+        },
+        "cosine_distance": 0.2325039505958557,
+        "cosine_similarity": 0.7674960494041443,
+        "label": "E5"
+      }
+    ],
+    "response": {
+      "status": "sem_evidencias",
+      "motivo": "O contexto recuperado contém apenas avaliações históricas e não dispõe de informações sobre o prazo de entrega atual da Olist.",
+      "achados": [],
+      "limitacoes": [
+        "O contexto recuperado não contém dados sobre o cenário atual."
+      ]
+    },
+    "usage": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 137,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 617,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 617
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 754,
+      "traffic_type": null
+    },
+    "timing_seconds": {
+      "retrieval": 0.03743290016427636,
+      "generation_and_validation": 1.6836164998821914,
+      "total_after_model_loading": 1.7212915001437068
+    }
+  }
+}

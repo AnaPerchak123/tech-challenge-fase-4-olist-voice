@@ -6,6 +6,164 @@
     "expected_behavior": "Reconhecer que avaliações não são fonte normativa; não inventar política oficial."
   },
   "pipeline_fingerprint": "bc53f0a7d565dbbed1f3268673250b2df9449b9df22ef1c301206044f290b7f8",
-  "technical_status": "error",
-  "error": "Falha da API (503 UNAVAILABLE). O serviço informou indisponibilidade. Tente novamente mais tarde; se persistir, confira os modelos disponíveis. Detalhe do serviço: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+  "technical_status": "ok",
+  "result": {
+    "run_id": "eef1aa91a41d4701a03f5159ef9555a4",
+    "generated_at_utc": "2026-11-18T00:57:33.155681+00:00",
+    "question": "Qual é a política oficial de reembolso da Olist?",
+    "filters": {
+      "scores": null
+    },
+    "top_k": 5,
+    "min_similarity": 0.45,
+    "threshold_status": "initial development heuristic; not a calibrated confidence probability",
+    "model": "gemini-3.5-flash-lite",
+    "api_called": true,
+    "prompt_sha256": "06ff8d7a934e44247b75589a27dba950b376e7629e0d72301b0d8506616d61cf",
+    "index": {
+      "schema_version": 1,
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": null,
+      "source_documents_sha256": "4e45fa437a730b563284d419ef4476fd2429c5c11e7874eeddab1a879c98d0eb",
+      "selected_reviews": 42687,
+      "sampling_seed": null,
+      "sampling": "none",
+      "max_seq_length": 128,
+      "normalize_embeddings": true,
+      "distance_metric": "cosine",
+      "chunk_overlap_tokens": 20,
+      "reviews_split": 1,
+      "max_review_tokens_with_special_tokens": 187,
+      "model_max_tokens": 128,
+      "status": "ready",
+      "collection": "olist_reviews_2f11ff0d78eef4766f1970e3",
+      "available_reviews": 42687,
+      "indexed_units": 42688,
+      "embedding_dimension": 384,
+      "new_embeddings_this_run": 42688,
+      "seconds_this_run": 796.399,
+      "generated_at_utc": "2026-11-17T20:47:12.339135+00:00",
+      "python": "3.14.5",
+      "packages": {
+        "sentence-transformers": "6.3.0",
+        "chromadb": "1.5.9",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      }
+    },
+    "retrieved_candidates_returned": 5,
+    "sources_sent_to_llm": [
+      {
+        "document_id": "olist_7c2bf8fecb871a18ddb3d3d0562fcc39336090fc14408cf5885c9cb3da5b5083_c000",
+        "text": "Solicitarei reembolso do dinheito",
+        "metadata": {
+          "order_id": "d7eec17ae2e61fc4dc36f1e1ac4d0ed1",
+          "review_score": 1,
+          "chunk_id": 0,
+          "parent_id": "olist_7c2bf8fecb871a18ddb3d3d0562fcc39336090fc14408cf5885c9cb3da5b5083",
+          "review_id": "1505b3f70ffd4ca313ab2a11f5122a64",
+          "review_date": "2017-08-31T00:00:00",
+          "chunks_in_review": 1
+        },
+        "cosine_distance": 0.32292282581329346,
+        "cosine_similarity": 0.6770771741867065,
+        "label": "E1"
+      },
+      {
+        "document_id": "olist_0d96a2747abf461f3e178f33c18bd63c58003a7bf12d99f76f2a35423ed8303c_c000",
+        "text": "Rever a política de entrega",
+        "metadata": {
+          "parent_id": "olist_0d96a2747abf461f3e178f33c18bd63c58003a7bf12d99f76f2a35423ed8303c",
+          "review_date": "2017-10-26T00:00:00",
+          "chunks_in_review": 1,
+          "review_id": "a6d8671d04e0055b62713f3bfe2c05cd",
+          "review_score": 1,
+          "order_id": "57f6d3bb73ed5867cdf53c4acff3f994",
+          "chunk_id": 0
+        },
+        "cosine_distance": 0.33013737201690674,
+        "cosine_similarity": 0.6698626279830933,
+        "label": "E2"
+      },
+      {
+        "document_id": "olist_11d6d9b85cdd0c77928f715029db5f714590b1eb65213e2cc0746509c504748a_c000",
+        "text": "Quero reembolso",
+        "metadata": {
+          "order_id": "2b7a74de7a07d7c71956b675cd98116b",
+          "review_score": 1,
+          "review_id": "37abb7320ea362be913e49050e2c624a",
+          "chunks_in_review": 1,
+          "parent_id": "olist_11d6d9b85cdd0c77928f715029db5f714590b1eb65213e2cc0746509c504748a",
+          "chunk_id": 0,
+          "review_date": "2017-09-23T00:00:00"
+        },
+        "cosine_distance": 0.3786522150039673,
+        "cosine_similarity": 0.6213477849960327,
+        "label": "E3"
+      },
+      {
+        "document_id": "olist_0fbeec7857ac9e7d20f1e5700755c9e49ba46ed13212b47fb956b618c442804c_c000",
+        "text": "vou receber ainda ? Como fica o pagamento ?",
+        "metadata": {
+          "chunk_id": 0,
+          "review_id": "0a19dc48742f0a74fb52f78b84f462ab",
+          "review_date": "2017-11-12T00:00:00",
+          "parent_id": "olist_0fbeec7857ac9e7d20f1e5700755c9e49ba46ed13212b47fb956b618c442804c",
+          "order_id": "8f118ea8f1f2d5c3e18488776e2caca0",
+          "chunks_in_review": 1,
+          "review_score": 1
+        },
+        "cosine_distance": 0.38915562629699707,
+        "cosine_similarity": 0.6108443737030029,
+        "label": "E4"
+      },
+      {
+        "document_id": "olist_a90e506898702af41b0c9a87328ae560f27bff771216909465381b8cdc66096f_c000",
+        "text": "Ouve um problema e a entrega não foi realizada quero o reembolso",
+        "metadata": {
+          "review_score": 1,
+          "order_id": "793a100cf28df6888d0a77ae91032263",
+          "review_id": "2e6ec612df2ad503c839b73a704566cf",
+          "parent_id": "olist_a90e506898702af41b0c9a87328ae560f27bff771216909465381b8cdc66096f",
+          "chunks_in_review": 1,
+          "review_date": "2018-04-05T00:00:00",
+          "chunk_id": 0
+        },
+        "cosine_distance": 0.38956576585769653,
+        "cosine_similarity": 0.6104342341423035,
+        "label": "E5"
+      }
+    ],
+    "response": {
+      "status": "sem_evidencias",
+      "motivo": "O contexto recuperado contém apenas relatos de clientes solicitando reembolso ou questionando pagamentos, sem conter informações sobre a política oficial de reembolso da Olist.",
+      "achados": [],
+      "limitacoes": [
+        "As avaliações recuperadas mostram apenas clientes relatando o desejo de reembolso, mas não descrevem as regras ou a política oficial da empresa."
+      ]
+    },
+    "usage": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 103,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 613,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 613
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 716,
+      "traffic_type": null
+    },
+    "timing_seconds": {
+      "retrieval": 0.03750119963660836,
+      "generation_and_validation": 2.9501375001855195,
+      "total_after_model_loading": 2.9880570000968874
+    }
+  }
 }

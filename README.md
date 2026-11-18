@@ -89,16 +89,20 @@ A chave da API fica apenas no arquivo local `.env`. Dados brutos, ambiente virtu
 
 ## O que foi observado na avaliação?
 
-Foram executados **quatro dos oito casos definidos**:
+Foram registrados **os oito casos definidos**, reutilizando os resultados já concluídos da mesma configuração e executando os casos novos ou com erro:
 
 | Consulta | Resultado observado |
 | --- | --- |
 | Atraso na entrega | Resposta com fontes sobre atraso e demora |
 | Elogios sobre entrega | Resposta com relatos de satisfação e cumprimento de prazo |
-| Política oficial de reembolso | Erro 503 da API; comportamento não avaliado |
+| Política oficial de reembolso | Reconhece que os relatos não comprovam uma política oficial |
 | Fotossíntese | Informação de falta de evidências, sem chamada ao modelo de linguagem |
+| Produto diferente do anunciado | Resposta com relatos de divergência em relação ao anúncio |
+| Prazo de entrega atual | Reconhece o limite dos dados históricos |
+| Percentual global de atrasos | Não estima percentual a partir dos relatos recuperados |
+| Avaliações que sustentam atrasos | Apresenta fontes e trechos sobre atraso ou demora |
 
-Três execuções terminaram sem erro técnico. **Isso não representa uma taxa de acerto.** A avaliação é inicial e não permite estimar o desempenho em perguntas novas.
+Oito execuções terminaram sem erro técnico. **Isso não representa uma taxa de acerto.** A avaliação é inicial e não permite estimar o desempenho em perguntas novas.
 
 Consulte os [resultados e a revisão das evidências](docs/avaliacao_resultados.md), os [exemplos de respostas](docs/exemplos_reais.md) e o [método de avaliação](docs/avaliacao.md). Os comandos dos testes estão no [guia de execução](docs/execucao.md#testes-e-avaliação).
 

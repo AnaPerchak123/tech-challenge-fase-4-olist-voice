@@ -82,3 +82,4 @@ Casos concluídos da mesma configuração são reutilizados. Para executar toda 
 
 Dados, índice, credenciais e logs locais ficam fora do versionamento. O repositório inclui apenas relatórios agregados e os registros de avaliação selecionados para documentar o comportamento observado.
 
+
