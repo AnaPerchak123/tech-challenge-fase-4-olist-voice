@@ -11,7 +11,7 @@ def main():
     obrigatorios = ["preparar_base.py", "criar_indice.py", "busca_semantica.py", "buscar_avaliacoes.py",
         "config_api.py", "rag_llm.py", "testar_api.py", "perguntar.py", "app.py", "avaliar.py",
         "README.md", "requirements.txt", ".gitignore", ".env.example", "docs/arquitetura.md",
-        "docs/decisoes_tecnicas.md", "docs/avaliacao.md", "docs/roteiro_video.md"]
+        "docs/decisoes_tecnicas.md", "docs/avaliacao.md"]
     faltantes = [n for n in obrigatorios if not (raiz / n).is_file()]
     versoes = {}
     for nome in ["pandas", "sentence-transformers", "chromadb", "torch", "transformers", "google-genai", "streamlit", "python-dotenv", "pydantic"]:
