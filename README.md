@@ -4,6 +4,15 @@ Aplicação para investigar avaliações de clientes da Olist por meio de pergun
 
 Projeto desenvolvido para o **Tech Challenge da Fase 4** da pós-graduação em Ciência de Dados e Inteligência Artificial da **FIAP**.
 
+## Apresentação
+
+**Autora:** Ana Perchak · Trabalho individual.
+
+- [Vídeo de apresentação — release v1.0.0](https://github.com/AnaPerchak123/tech-challenge-fase-4-olist-voice/releases/tag/v1.0.0).
+- [Baixar o vídeo em MP4](https://github.com/AnaPerchak123/tech-challenge-fase-4-olist-voice/releases/download/v1.0.0/olist-voice-apresentacao.mp4).
+
+Na página da release, o arquivo `olist-voice-apresentacao.mp4` está disponível em **Assets**. O link direto disponibiliza o arquivo para download.
+
 ## Qual problema o projeto resolve?
 
 Ler milhares de avaliações individualmente dificulta a investigação de reclamações e elogios. O Olist Voice permite que gestores e analistas explorem esses relatos e consultem as fontes de cada resposta na própria tela.
